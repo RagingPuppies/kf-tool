@@ -1,0 +1,6 @@
+---
+  clusters:
+    this_cluster:
+      broker_list:
+        - "ny-kafka-rawdata:9092"
+      zookeeper: "ny-zk-rawdata:2181"
