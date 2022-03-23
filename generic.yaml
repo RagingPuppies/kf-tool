@@ -2,5 +2,5 @@
   clusters:
     this_cluster:
       broker_list:
-        - "ny-kafka-rawdata:9092"
-      zookeeper: "ny-zk-rawdata:2181"
+        - "kafka-cluster:9092"
+      zookeeper: "zk-node:2181"
