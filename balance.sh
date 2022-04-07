@@ -92,10 +92,7 @@ function balance_leaders {
         progress_bar $total_unbalance_leaders $unbalance_leaders "Leader Balance"
         before=$(check_unbalanced_leaders)
         rebalance_leaders $leader_changes
-        debug "Checking active task"
-        debug "leader changes $leader_changes"
         while active_task ;do
-            debug "Active task is running"
             sleep 2
         done
         sleep 1
@@ -106,8 +103,7 @@ function balance_leaders {
             let leader_changes=leader_changes+10
         fi
     done
-    #clear
-    #echo "Balance finished!"
-    #
+    echo "Balance finished!"
+    
 
 }
